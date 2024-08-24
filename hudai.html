@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biker zone</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<!-- daisyUI CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+</style>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'clifford': '#da373d',
+          'bike-primary': '#E76F51',
+          'bike-primary-bg': '#FDF0ED',
+        }
+      }
+    }
+  }
+</script>
+
+<body class="max-w-screen-lg mx-auto">
+    <div class="flex p-[5%] border-8  border-red-600 flex-col sm:flex-row">
+        <!-- text content -->
+        <div class=" flex-1 border border-green-400 inline-flex flex-col justify-between">
+          <h1 class="text-6xl font-bold leading-[75px] mb-5">
+            Ride-on R15 V4 <br>with Smile
+          </h1>
+          <p class="w-8/12 mb-8">
+            Amet minim mollit non deserunt ullamco
+            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+          </p>
+          <div>
+            <button class="btn bg-bike-primary text-white px-8 py-4 text-xl h-16">purchase</button>
+          </div>
+        </div>
+        <!-- image content -->
+        <div class="border border-green-400 flex-1">
+          <img class="w-full" src="./images/slider/bike1.png"/>
+        </div>
+      </div>
+</body>
+</html>
